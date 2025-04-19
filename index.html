@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BossaGuitar - Tienda de Guitarras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">BossaWorld</h1>
+            <nav class="main-nav">
+                <a href="#">Inicio</a>
+                <a href="#">Guitarras</a>
+                <a href="#">Amplificadores</a>
+                <a href="#">Accesorios</a>
+                <a href="#" class="cart-link">Carrito (0)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h2>Encuentra el sonido perfecto</h2>
+                <p>Las mejores guitarras para todos los estilos</p>
+            </div>
+        </section>
+
+        <section class="product-filters">
+            <div class="container">
+                <form class="filter-form">
+                    <select>
+                        <option>Todas las marcas</option>
+                        <option>Fender</option>
+                        <option>Gibson</option>
+                        <option>Ibanez</option>
+                    </select>
+                    <select>
+                        <option>Todos los precios</option>
+                        <option>Menos de $500</option>
+                        <option>$500 - $1000</option>
+                        <option>Más de $1000</option>
+                    </select>
+                    <button type="submit">Filtrar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h2 class="section-title">Nuestras Guitarras</h2>
+                <div class="product-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <a href="#product-modal" class="product-link">
+                            <div class="product-image">
+                                <img src="https://i.multisononline.com/103268-large_default/fender-player-stratocaster-mn-car.jpg" alt="Fender Stratocaster">
+                            </div>
+                            <div class="product-info">
+                                <h3>Fender Stratocaster</h3>
+                                <p class="price">$899</p>
+                                <p class="brand">Marca: Fender</p>
+                            </div>
+                        </a>
+                        <a href="#" class="add-to-cart">Añadir al carrito</a>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <a href="#product-modal" class="product-link">
+                            <div class="product-image">
+                                <img src="https://i.multisononline.com/106234-large_default/gibson-les-paul-studio-ebony-.jpg" alt="Gibson Les Paul">
+                            </div>
+                            <div class="product-info">
+                                <h3>Gibson Les Paul</h3>
+                                <p class="price">$1,299</p>
+                                <p class="brand">Marca: Gibson</p>
+                            </div>
+                        </a>
+                        <a href="#" class="add-to-cart">Añadir al carrito</a>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card">
+                        <a href="#product-modal" class="product-link">
+                            <div class="product-image">
+                                <img src="https://i.multisononline.com/95367-large_default/ibanez-rg550dy.jpg" alt="Ibanez RG550">
+                            </div>
+                            <div class="product-info">
+                                <h3>Ibanez RG550</h3>
+                                <p class="price">$799</p>
+                                <p class="brand">Marca: Ibanez</p>
+                            </div>
+                        </a>
+                        <a href="#" class="add-to-cart">Añadir al carrito</a>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card">
+                        <a href="#product-modal" class="product-link">
+                            <div class="product-image">
+                                <img src="https://i.multisononline.com/90680-large_default/fender-vintera-50s-telecaster-mn-frd.jpg" alt="Fender Telecaster">
+                            </div>
+                            <div class="product-info">
+                                <h3>Fender Telecaster</h3>
+                                <p class="price">$749</p>
+                                <p class="brand">Marca: Fender</p>
+                            </div>
+                        </a>
+                        <a href="#" class="add-to-cart">Añadir al carrito</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <a href="#close" class="close-modal">&times;</a>
+            <div class="modal-product">
+                <div class="modal-image">
+                    <img src="https://i.multisononline.com/103268-large_default/fender-player-stratocaster-mn-car.jpg" alt="" id="modal-img">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Fender Stratocaster</h2>
+                    <p class="price" id="modal-price">$899</p>
+                    <p class="brand" id="modal-brand">Marca: Fender</p>
+                    <p class="description" id="modal-desc">La clásica Stratocaster con sonido brillante y versátil. Cuerpo de aliso, mástil de arce y pastillas single coil.</p>
+                    <div class="modal-actions">
+                        <a href="#" class="add-to-cart">Añadir al carrito</a>
+                        <a href="#close" class="close-btn">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 BossaGuitar. Todos los derechos reservados a bigtilinfloppa.</p>
+        </div>
+    </footer>
+</body>
+</html>
